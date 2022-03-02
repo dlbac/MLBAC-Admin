@@ -1,4 +1,4 @@
-## Organizatoin AATs, OATs, and ReplayData for the Three-Tasks Administration
+## Organizatoin of AATs, OATs, and ReplayData for the Three-Tasks Administration
 
 This directory contains the AATs, OATs, and ReplayData for each three-Tasks administration and store them in separate files. 
 We combine the AATs of first three Tasks (t-1, t-2, and t-3) and store them in a single file.  
