@@ -9,7 +9,7 @@ The `rf-mlbac-finetuning.py` takes three parameters in following order to incorp
 - AATs File Path
 - ReplayData File Path
 
-For example, `rf-mlbac-finetuning.py` `../../trained_ml_models/initial_model-rf-mlbac.pkl` `../../datasets/single_task/aats_task1.sample` `../../datasets/single_task/replay_data_task1.sample`
+For example, python3 `rf-mlbac-finetuning.py` `../../trained_ml_models/initial_model-rf-mlbac.pkl` `../../datasets/single_task/aats_task1.sample` `../../datasets/single_task/replay_data_task1.sample`
 is a sample command to **update** the current **initial_model-rf-mlbac.pkl** model using the AATs (`aats_task1.sample`) and ReplayData (`replay_data_task1.sample`) of Task **t-1**.
 
 
@@ -22,7 +22,7 @@ The `rf-mlbac-retraining.py` takes two parameters in following order to incorpor
 - AATs File Path
 - OATs File Path
 
-For example, `rf-mlbac-retraining.py` `../../datasets/single_task/aats_task1.sample` `../../datasets/single_task/replay_data_task1.sample`
+For example, python3 `rf-mlbac-retraining.py` `../../datasets/single_task/aats_task1.sample` `../../datasets/single_task/replay_data_task1.sample`
 is a sample command to **generate** a new model using the AATs (`aats_task1.sample`) and ReplayData (`replay_data_task1.sample`) of Task **t-1**.
 
 
@@ -36,4 +36,4 @@ It takes two parameters in following order.
 For example, the `aats_task1.sample.pkl` is the Updated ML Model (_**F**<sub>updated</sub>_) for Task **t-1**.
 The following command will evaluate the updated model for OATs.
 
-`rf-mlbac-evaluate.py` `results/aats_task1.sample.pkl` `../../datasets/single_task/oats_task1.sample`
+python3 `rf-mlbac-evaluate.py` `results/updated_rf_model.pkl` `../../datasets/single_task/oats_task1.sample`
