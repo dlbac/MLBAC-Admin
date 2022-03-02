@@ -22,4 +22,4 @@ It takes two parameters in following order.
 For example, the `aats_task1.sample.hdf5` is the Updated ML Model (_**F**<sub>updated</sub>_) for Task **t-1**.
 The following command will evaluate the updated model for OATs.
 
-`resnet-mlbac-evaluation.py` `results/aats_task1.sample.hdf5` `../../datasets/single_task/oats_task1.sample`
+`resnet-mlbac-evaluation.py` `results/updated_resnet_model.hdf5` `../../datasets/single_task/oats_task1.sample`
