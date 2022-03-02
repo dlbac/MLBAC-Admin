@@ -18,9 +18,8 @@ import cloudpickle as pickle
 debug = True
 
 ########### Import File Names ######################
-trainedModelName = str(sys.argv[1])
-aatsFileName = str(sys.argv[2])
-oatsFileName = str(sys.argv[3])
+aatsFileName = str(sys.argv[1])
+oatsFileName = str(sys.argv[2])
 
 cols = 22 # <2 uid rid> <8 user-metadata> <8 res-metadata><4 ops>
 
@@ -97,6 +96,18 @@ for i in range(test_size):
 
 print('Accuracy Score:', actual_acc / (test_size * 4))
 
-with open(aatsFileName + '.pkl', mode='wb') as file:
+outputFileName = 'updated_rf_model'
+DIR_ASSETS = 'results/'
+PATH_MODEL = DIR_ASSETS + outputFileName + '.pkl'
+
+if debug:
+  print('Saving trained model to {}.'.format(PATH_MODEL))
+
+if not os.path.isdir(DIR_ASSETS):
+    os.mkdir(DIR_ASSETS)
+
+model.save(PATH_MODEL)
+with open(PATH_MODEL, mode='wb') as file:
    pickle.dump(rfmodel, file)
+
 

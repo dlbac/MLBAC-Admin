@@ -246,7 +246,7 @@ history = model.fit(x_train, y_train,
         shuffle=True,
         callbacks=callbacks)
 
-outputFileName = aatsFileName
+outputFileName = 'updated_resnet_model'
 DIR_ASSETS = 'results/'
 PATH_MODEL = DIR_ASSETS + outputFileName + '.hdf5'
 
