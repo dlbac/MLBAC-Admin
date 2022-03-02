@@ -9,7 +9,7 @@ The `resnet-mlbac-finetuning.py` takes three parameters in following order to in
 - AATs File Path
 - ReplayData File Path
 
-For example, `resnet-mlbac-finetuning.py` `../../trained_ml_models/initial_model-resnet-mlbac.hdf5` `../../datasets/single_task/aats_task1.sample` `../../datasets/single_task/replay_data_task1.sample`
+For example, python3 `resnet-mlbac-finetuning.py` `../../trained_ml_models/initial_model-resnet-mlbac.hdf5` `../../datasets/single_task/aats_task1.sample` `../../datasets/single_task/replay_data_task1.sample`
 is a sample command to **update** the current **initial_model-resnet-mlbac.hdf5** model using the AATs (`aats_task1.sample`) and ReplayData (`replay_data_task1.sample`) of Task **t-1**.
 
 ## Evaluating the Updated ML Model (_**F**<sub>updated</sub>_) 
@@ -22,4 +22,4 @@ It takes two parameters in following order.
 For example, the `aats_task1.sample.hdf5` is the Updated ML Model (_**F**<sub>updated</sub>_) for Task **t-1**.
 The following command will evaluate the updated model for OATs.
 
-`resnet-mlbac-evaluation.py` `results/updated_resnet_model.hdf5` `../../datasets/single_task/oats_task1.sample`
+python3 `resnet-mlbac-evaluation.py` `results/updated_resnet_model.hdf5` `../../datasets/single_task/oats_task1.sample`
