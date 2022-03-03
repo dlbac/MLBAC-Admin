@@ -19,7 +19,7 @@ It takes two parameters in following order.
 - Updated ML Model (_**F**<sub>updated</sub>_) 
 - AATs (while evaluating for AATs) or OATs (while evaluating for OATs) File Path
 
-For example, the `aats_task1.sample.hdf5` is the Updated ML Model (_**F**<sub>updated</sub>_) for Task **t-1**.
+For example, the `updated_resnet_model.hdf5` is the Updated ML Model (_**F**<sub>updated</sub>_) for Task **t-1**.
 The following command will evaluate the updated model for OATs.
 
 python3 `resnet-mlbac-evaluation.py` `results/updated_resnet_model.hdf5` `../../datasets/single_task/oats_task1.sample`
