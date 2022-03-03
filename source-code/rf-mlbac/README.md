@@ -33,7 +33,7 @@ It takes two parameters in following order.
 - Updated ML Model (_**F**<sub>updated</sub>_) 
 - AATs (while evaluating for AATs) or OATs (while evaluating for OATs) File Path
 
-For example, the `aats_task1.sample.pkl` is the Updated ML Model (_**F**<sub>updated</sub>_) for Task **t-1**.
+For example, the `updated_rf_model.pkl` is the Updated ML Model (_**F**<sub>updated</sub>_) for Task **t-1**.
 The following command will evaluate the updated model for OATs.
 
 python3 `rf-mlbac-evaluate.py` `results/updated_rf_model.pkl` `../../datasets/single_task/oats_task1.sample`
