@@ -1,6 +1,6 @@
 ## Syntax of the Dataset
 
-*mlbac_access_control_state.sample* is the dataset of MLBAC administration. 
+*u5k-r5k-auth12k.sample* is the dataset of MLBAC administration. 
 
 The dataset has around 5K users, 5K resources, eight user metadata, and eight resource metadata. Also, the dataset has four operations (op1, op2, op3, and op4).
 
